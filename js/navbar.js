@@ -1,15 +1,15 @@
 // Memuat navbar dari file navbar.html
-fetch('navbar.html')
+fetch('navbar.php')
     .then(response => response.text())
     .then(data => {
         document.getElementById('navbar').innerHTML = data;
     })
     .catch(error => console.error('Error loading navbar:', error));
 
-    let lastScrollTop = 0;
+let lastScrollTop = 0;
 const navbar = document.querySelector('.navbar');
 
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
     if (scrollTop > lastScrollTop) {

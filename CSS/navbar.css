@@ -109,5 +109,31 @@ html {
         display: none;
     }
 }
+/* Gaya tombol Login dan Logout agar ukurannya sama persis */
+.transparent-button-white {
+    display: inline-flex; /* Membuat kontainer fleksibel */
+    align-items: center; /* Memusatkan teks secara vertikal */
+    justify-content: center; /* Memusatkan teks secara horizontal */
+    width: 150px; /* Lebar tetap untuk semua tombol */
+    height: 50px; /* Tinggi tetap untuk semua tombol */
+    padding: 0; /* Hapus padding untuk memastikan ukuran seragam */
+    font-size: 18px; /* Ukuran teks sama */
+    font-weight: bold; /* Ketebalan teks sama */
+    color: #f39c12; /* Warna teks */
+    background-color: transparent; /* Latar belakang transparan */
+    border: 2px solid #f39c12; /* Border konsisten */
+    text-decoration: none; /* Hilangkan garis bawah */
+    text-align: center; /* Teks rata tengah */
+    border-radius: 5px; /* Sudut tombol sedikit membulat */
+    transition: all 0.3s ease; /* Animasi hover */
+    box-sizing: border-box; /* Termasuk border dalam ukuran */
+}
+
+.transparent-button-white:hover {
+    background-color: #f39c12; /* Warna latar saat hover */
+    color: #fff; /* Warna teks saat hover */
+    border-color: #f39c12; /* Border tetap konsisten */
+}
+
 
 
